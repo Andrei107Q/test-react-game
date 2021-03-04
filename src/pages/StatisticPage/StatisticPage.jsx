@@ -1,26 +1,34 @@
 export const StatisticPage = () => {
   const statisticData = JSON.parse(localStorage.getItem('statistic'))
+  let StatisticTable
 
-  statisticData.sort((a, b) => {
-    if (a.score < b.score) {
-      return 1;
-    }
-    if (a.score > b.score) {
-      return -1;
-    }
-    return 0;
-  });
+  if(statisticData) {
+    statisticData.sort((a, b) => {
+      if (a.score < b.score) {
+        return 1;
+      }
+      if (a.score > b.score) {
+        return -1;
+      }
+      return 0;
+    });
 
-  const StatisticTable = statisticData.map((plyer) => {
-    return (
-      <tr>
-        <td>{plyer.name}</td>
-        <td>{plyer.lastName}</td>
-        <td>{plyer.score}</td>
-      </tr>
-    )
 
-  })
+    StatisticTable = statisticData.map((plyer) => {
+      return (
+        <tr>
+          <td>{plyer.name}</td>
+          <td>{plyer.lastName}</td>
+          <td>{plyer.score}</td>
+        </tr>
+      )
+  
+    })
+
+  }
+
+
+
  
   if(statisticData) {
     return (
