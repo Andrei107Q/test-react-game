@@ -54,7 +54,7 @@ export const StartPage = () => {
           </div>
           <div class="row" className={`row ${s.buttonWrapper}`}>
               <div class="">
-                <a className={`waves-effect waves-light btn ${s.button}`} onClick={startGame}>Start</a>
+                <button className={`waves-effect waves-light btn ${s.button}`} onClick={startGame}>Start</button>
               </div>            
             </div>
 

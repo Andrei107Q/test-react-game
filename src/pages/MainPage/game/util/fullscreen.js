@@ -1,5 +1,5 @@
 export const fullScreen = () => {
-  let pressQ = false
+  //let pressQ = false
 
   document.addEventListener('keydown', (e) => {
     const keyName = e.key

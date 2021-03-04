@@ -17,12 +17,12 @@ import { soundFon, soundPalyHit } from "./util/SoundPaly";
 
 let bricks = []
 let {ballObj, paddleProps, brickObj, player, screenWith} = data
-const test = (screenWith - 450) /2
+//const test = (screenWith - 450) /2
 
 export const Board = () => {
   const canvasRef = useRef(null)
   
-  let x = 0
+  //let x = 0
 
   useEffect(() => {
     setTimeout(() => {

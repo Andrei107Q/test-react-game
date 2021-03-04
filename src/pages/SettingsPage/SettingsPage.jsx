@@ -42,7 +42,7 @@ export const SettingsPage = () => {
   const rangeAudioSettingsLocal = JSON.parse(localStorage.getItem('rangeAudio'))
   const [rangeAudioValue, setRangeAudio] = useState(rangeAudioSettingsLocal.value)
   const changeRangeAudio = () => {
-    const rangeAudioValue = JSON.parse(localStorage.getItem('rangeAudio')) 
+    //const rangeAudioValue = JSON.parse(localStorage.getItem('rangeAudio')) 
     localStorage.setItem('rangeAudio', JSON.stringify({value: rangeAudioRef.current.value}))
     setRangeAudio(rangeAudioRef.current.value)
   }
@@ -51,7 +51,7 @@ export const SettingsPage = () => {
   const rangeSoundSettingsLocal = JSON.parse(localStorage.getItem('rangeSound'))
   const [rangeSoundValue, setRangeSound] = useState(rangeSoundSettingsLocal.value)
   const changeRangeSound = () => {
-    const rangeSoundValue = JSON.parse(localStorage.getItem('rangeSound')) 
+    //const rangeSoundValue = JSON.parse(localStorage.getItem('rangeSound')) 
     localStorage.setItem('rangeSound', JSON.stringify({value: rangeSoundRef.current.value}))
     setRangeSound(rangeSoundRef.current.value)
   }
