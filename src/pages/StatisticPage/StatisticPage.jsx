@@ -35,7 +35,7 @@ export const StatisticPage = () => {
           </thead>
 
           <tbody>
-            { StatisticTable }
+            { StatisticTable ?  StatisticTable : 'No statistic yet'}
           </tbody>
         </table>
       </div>
