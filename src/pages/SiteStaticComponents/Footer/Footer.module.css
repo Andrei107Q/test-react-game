@@ -1,0 +1,11 @@
+.footerPosition{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-top: 0;
+}
+
+.logoSchool{
+  width: 40px;
+  margin-left: 15px;
+}
